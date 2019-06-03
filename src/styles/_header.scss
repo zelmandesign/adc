@@ -1,4 +1,7 @@
 header {
+  background-color: #fff;
+  transition: all 0.5s;
+
   a {
     color: $text;
     font-size: 17px;
@@ -13,13 +16,12 @@ header {
 
   .navbar-collapse {
     @include media-breakpoint-down(md) {
-      margin-top: 25px;
+      margin-top: 30px;
     }
   }
 
   .navbar {
-    padding-top: 38px;
-    padding-bottom: 30px;
+    padding: 38px 0 30px 0;
 
     .navbar-brand {
       padding: 0;
@@ -40,4 +42,8 @@ header {
       }
     }
   }
+}
+
+.scrollUp {
+  transform: translateY(-150px);
 }
