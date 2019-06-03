@@ -28,4 +28,4 @@ Zadanie rekrutacyjne
 
 ## Feedback
 
-Nie ukrywam, ze bardzo zalezy mi na feedback'u. ` 
+Nie ukrywam, ze bardzo zalezy mi na feedback'u do tego projektu. Z gory dziekuje.
