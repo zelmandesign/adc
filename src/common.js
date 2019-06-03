@@ -1,8 +1,4 @@
 import $ from 'jquery';
-import Wow from 'wow.js'
-
-const wow = new Wow();
-wow.init();
 
 // Property data API
 $.getJSON('https://api.adcookie.usermd.net/deweloper/', function (data) {
