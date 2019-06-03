@@ -1,4 +1,8 @@
 import $ from 'jquery';
+import Wow from 'wow.js'
+
+const wow = new Wow();
+wow.init();
 
 // Property data API
 $.getJSON('https://api.adcookie.usermd.net/deweloper/', function (data) {
@@ -100,3 +104,36 @@ function setInputFilter(textbox, inputFilter) {
 setInputFilter(document.getElementById("tel"), function(value) {
   return /^\d*\.?\d*$/.test(value);
 });
+
+// Trigger Counter whem user scroll to div 
+
+$(window).scroll(function() {
+  var hT = $('#about p').offset().top,
+      hH = $('#about p').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+  if (wS > (hT+hH-wH)){
+    $('.digits').each(function() {
+      var $this = $(this),
+          countTo = $this.attr('data-count');
+      
+      $({ countNum: $this.text()}).animate({
+        countNum: countTo
+      },
+    
+      {
+        duration: 8000,
+        easing:'linear',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+          $this.text(this.countNum);
+          //alert('finished');
+        }
+      });
+    });
+  }
+});
+
+

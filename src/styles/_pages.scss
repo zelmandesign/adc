@@ -1,18 +1,18 @@
 #main-pic {
   max-width: 1630px;
-  margin: 0 auto;
+  height: 630px;
+  margin: 140px auto 0 auto;
   background-image: url("../images/header.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center;
   background-size: inherit;
-  height: 770px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
     background-image: url("../images/header-overlay.jpg");
-    background-position: bottom center;
+    background-position: center;
     mix-blend-mode: overlay;
     min-width: 100%;
     min-height: 100%;
@@ -178,4 +178,115 @@
 
 #about {
   padding: 105px 0 110px 0;
+
+  h2 {
+    margin: 40px 0 30px 0;
+  }
+
+  p {
+    letter-spacing: 2px;
+    padding-bottom: 130px;
+  }
+
+  .digits {
+    font-size: 150px;
+    letter-spacing: 2px;
+    line-height: 150px;
+    font-weight: 800;
+  }
+
+  .digits-desc {
+    max-width: 300px;
+    margin: 0 auto;
+    font-weight: 300;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+#contact-bottom {
+  background: #1e1f21;
+  padding: 100px 0;
+  color: #fff;
+
+  .container {
+    max-width: 940px;
+  }
+
+  hr {
+    border-top: 2px solid #fff;
+  }
+
+  h2 {
+    margin: 40px 0 30px 0;
+  }
+
+  p {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .form-group input[type=date],
+  .form-group input[type=datetime-local],
+  .form-group input[type=email],
+  .form-group input[type=number],
+  .form-group input[type=password],
+  .form-group input[type=search-md],
+  .form-group input[type=search],
+  .form-group input[type=tel],
+  .form-group input[type=text],
+  .form-group input[type=time],
+  .form-group input[type=url] {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+
+  ::placeholder {
+    color: #fff;
+  }
+
+  .form-control {
+    padding: 0.375rem 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    &:nth-child(n+3) {
+      margin-left: 30px;
+      max-width: 810px;
+    }
+  }
+
+  .btn {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .custom-control {
+    &.material-checkbox {
+      color: #fff;
+      font-size: 12px;
+      line-height: 12px;
+
+      .material-control-indicator {
+        border: 1px solid #fff;
+      }
+
+      .material-control-input {
+        display: none;
+
+        &:checked ~ .material-control-indicator {
+          border-color: var(--color);
+          transform: rotateZ(45deg) translate(1px, -5px);
+          width: 10px;
+          border-top: 0 solid #fff;
+          border-left: 0 solid #fff;
+        }
+      }
+    }
+  }
 }

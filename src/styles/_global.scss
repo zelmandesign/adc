@@ -45,6 +45,14 @@ h4 {
   margin: 35px 0;
 }
 
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid #000;
+  width: 50px;
+}
+
 .btn {
   font-weight: 400;
   padding: 0;
@@ -119,8 +127,6 @@ h4 {
   border-bottom: 1px solid #000;
   -webkit-border-radius: 0;
   border-radius: 0;
-  // -webkit-box-sizing: content-box;
-  // box-sizing: content-box;
   background-color: transparent;
 }
 

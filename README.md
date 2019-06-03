@@ -1,31 +1,31 @@
-# webpack-bootstrap
+# AdCookie
 
-Webpack with WebpackDevServer, Bootstrap, Sass, Stylelint & Babel
+Zadanie rekrutacyjne
 
-## Features:
+## Technologie:
 
-* Sass for stylesheets
-* Modern JavaScript
-* [Webpack](https://webpack.github.io/) for compiling assets
-* [WebpackDevServer](https://github.com/webpack/webpack-dev-server)
+* Jquery
+* Sass
+* Webpack
 * [Stylelint](https://github.com/stylelint/stylelint)
 * [Bootstrap 4](https://getbootstrap.com/)
-* [Babel](https://babeljs.io/)
 
-## Installation
+## Specyfikacja:
 
-```shell
-$ git clone git@github.com:zelmandesign/webpack-bootstrap.git
-$ cd webpack-bootstrap
-```
+`Menu` – chyba byl blad w opisie polecenia bo 'skroluj w dol' bylo uzyte dwa razy ale zrobilem nav, ktory chowa sie na scrolu w dol i pojawia podczas scrolu w gore. Menu dziala tez na tel.
 
-Run `yarn` from `webpack-bootstrap` directory to install dependencies
+`Image overlay` - zrobilem to w cssie ale obrazki w assetach roznia sie troche od tych w makiecie ale powinno byc dobrze. Opacity overlayu to 50% i mix-blend-mode: overlay;
 
-## Development
+`Wyszukiwarka` – dane sa wyciagniete z API przy pomocy jquery a potem wklejone do carousel z bootstrapa za pomoc prostego loop'a. Klikniecie na button 'Zapytaj' podowduje scroll za pomoca smooth scroll. Klikniecie na 'wyszukiwarka' w navbarze tez powoduje scroll do formularza. „Pobierz plan” nie otwiera pliku PDF bo nie ma linku do pdfa w jsonie.
 
-* `yarn start` — Compile assets when file changes are made, start WebpackDevServer
-* `yarn build` — Compile assets for production
+`Formularze` – zrobilem tylko html i walidajce formularzy. Nie robilem wysylania formularza bo nie robilem wordpressa. Zrobilem tak, ze w polu telefon mozna wpisywac tylko liczby.
 
-## Production
+`Statystyki` – naliczanie statystyk wlacza sie gdy zescrolujemy do tego div'a a nie podczas pierwszego zaladowania sie strony.
 
-* `/dist` folder contains compiled assets
+`Animacje` – dodalem animacje przy pomocy animate.css & wow.js - takze nie wlaczaja sie podczas pierwszego zaladowania sie strony tylko jak ze scrolujemy do odpowiedniego div'a.
+
+`RWD` – zrobilem responsive za pomoca Bootstrap'a. Carousel moglby wygladac lepiej na telefonie ale nie wiedzialem gdzie upchnac button next & prev
+
+## Feedback
+
+Nie ukrywam, ze bardzo zalezy mi na feedback'u. ` 
